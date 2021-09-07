@@ -1,0 +1,148 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.formRegistration {
+    display: grid;
+    grid-template-areas:
+            "header"
+            "body";
+    grid-gap: 40px;
+    background-color: white;
+    box-shadow: 0px 4px 96px 0px #0A094B36;
+    border-radius: 15px;
+    height: 905px;
+    width: 770px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1375de;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 10px 10px 0 0;
+    height: 144px;
+}
+
+.body_footer {
+    height: 760px;
+}
+
+.body {
+    display: grid;
+    grid-template-rows: repeat(5, 85px);
+    grid-gap: 30px;
+    margin: 0 50px 0 50px;
+    background-color: white;
+    position: relative;
+}
+
+.input {
+    border: 1px solid #BABABA;
+    border-radius: 15px;
+    text-indent: 115px;
+}
+
+.input:focus{
+    border: none;
+}
+
+.background_image_first {
+    position: absolute;
+}
+
+.icon_first {
+    position: absolute;
+    top: 26px;
+    left: 27px;
+    z-index: 1;
+}
+
+.background_image_second {
+    position: absolute;
+    top: 115px;
+}
+
+.icon_second {
+    position: absolute;
+    top: 141px;
+    left: 27px;
+    z-index: 1;
+}
+
+.background_image_third {
+    position: absolute;
+    top: 230px;
+}
+
+.icon_third {
+    position: absolute;
+    top: 262px;
+    left: 27px;
+    z-index: 1;
+}
+
+.background_image_fourth {
+    position: absolute;
+    top: 345px;
+}
+
+.icon_fourth {
+    position: absolute;
+    top: 373px;
+    left: 31px;
+    z-index: 1;
+}
+
+.show_password_first{
+    position: absolute;
+    top: 377px;
+    left: 609px;
+}
+
+.background_image_fifth {
+    position: absolute;
+    top: 460px;
+}
+
+.icon_fifth {
+    position: absolute;
+    top: 489px;
+    left: 31px;
+    z-index: 1;
+}
+.show_password_second{
+    position: absolute;
+    top: 493px;
+    left: 609px;
+}
+.input::placeholder {
+    position: absolute;
+    top: 30px;
+    font-size: large;
+    font-family: Montserrat;
+}
+
+/*.input::placeholder:focus {*/
+/*     position: relative;*/
+/*     left: 115px*/
+/* }*/
+
+
+.footer {
+    height: 85px;
+    width: 670px;
+    background-color: #1375de;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Montserrat;
+    border: none;
+    margin: 40px 50px 50px 50px;
+    border-radius: 10px;
+}
