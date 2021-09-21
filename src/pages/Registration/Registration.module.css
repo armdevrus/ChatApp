@@ -42,91 +42,65 @@
     position: relative;
 }
 
-.input {
-    border: 1px solid #BABABA;
-    border-radius: 15px;
-    text-indent: 115px;
-}
+/*.background_image_second {*/
+/*    position: absolute;*/
+/*    top: 115px;*/
+/*}*/
 
-.input:focus{
-    border: none;
-}
+/*.icon_second {*/
+/*    position: absolute;*/
+/*    top: 141px;*/
+/*    left: 27px;*/
+/*    z-index: 1;*/
+/*}*/
 
-.background_image_first {
-    position: absolute;
-}
+/*.background_image_third {*/
+/*    position: absolute;*/
+/*    top: 230px;*/
+/*}*/
 
-.icon_first {
-    position: absolute;
-    top: 26px;
-    left: 27px;
-    z-index: 1;
-}
+/*.icon_third {*/
+/*    position: absolute;*/
+/*    top: 262px;*/
+/*    left: 27px;*/
+/*    z-index: 1;*/
+/*}*/
 
-.background_image_second {
-    position: absolute;
-    top: 115px;
-}
+/*.background_image_fourth {*/
+/*    position: absolute;*/
+/*    top: 345px;*/
+/*}*/
 
-.icon_second {
-    position: absolute;
-    top: 141px;
-    left: 27px;
-    z-index: 1;
-}
+/*.icon_fourth {*/
+/*    position: absolute;*/
+/*    top: 373px;*/
+/*    left: 31px;*/
+/*    z-index: 1;*/
+/*}*/
 
-.background_image_third {
-    position: absolute;
-    top: 230px;
-}
+/*.show_password_first{*/
+/*    position: absolute;*/
+/*    top: 377px;*/
+/*    left: 609px;*/
+/*}*/
 
-.icon_third {
-    position: absolute;
-    top: 262px;
-    left: 27px;
-    z-index: 1;
-}
+/*.background_image_fifth {*/
+/*    position: absolute;*/
+/*    top: 460px;*/
+/*}*/
 
-.background_image_fourth {
-    position: absolute;
-    top: 345px;
-}
+/*.icon_fifth {*/
+/*    position: absolute;*/
+/*    top: 489px;*/
+/*    left: 31px;*/
+/*    z-index: 1;*/
+/*}*/
+/*.show_password_second{*/
+/*    position: absolute;*/
+/*    top: 493px;*/
+/*    left: 609px;*/
+/*}*/
 
-.icon_fourth {
-    position: absolute;
-    top: 373px;
-    left: 31px;
-    z-index: 1;
-}
-
-.show_password_first{
-    position: absolute;
-    top: 377px;
-    left: 609px;
-}
-
-.background_image_fifth {
-    position: absolute;
-    top: 460px;
-}
-
-.icon_fifth {
-    position: absolute;
-    top: 489px;
-    left: 31px;
-    z-index: 1;
-}
-.show_password_second{
-    position: absolute;
-    top: 493px;
-    left: 609px;
-}
-.input::placeholder {
-    position: absolute;
-    top: 30px;
-    font-size: large;
-    font-family: Montserrat;
-}
 
 /*.input::placeholder:focus {*/
 /*     position: relative;*/

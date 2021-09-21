@@ -1,0 +1,37 @@
+
+.container {
+    display: flex;
+}
+
+.img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+
+}
+
+.icon {
+    position: absolute;
+
+}
+
+.visibility {
+    position: absolute;
+    left: 609px;
+
+}
+
+.input {
+    border: 1px solid #BABABA;
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+    text-indent: 30px;
+}
+
+.input::placeholder {
+    font-size: large;
+}
