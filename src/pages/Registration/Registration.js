@@ -8,6 +8,17 @@ import show_password from "../../icons/show_password_.png"
 import Input from "../../components/Input/Input";
 
 const RegistrationForm = () => {
+
+    const [typeButton, setTypeButton] = React.useState('password')
+
+    const handleShowPassword = () => {
+        if (typeButton === 'password') {
+            setTypeButton('text')
+        } else {
+            setTypeButton('password')
+        }
+    }
+
     return(
         <div className={styles.main}>
             <div className={styles.formRegistration}>
@@ -16,11 +27,13 @@ const RegistrationForm = () => {
                 </div>
                 <div className={styles.body_footer}>
                     <div className={styles.body}>
-                           <Input placeholder="Имя" icon={icon_user} background={background}/>
-                           <Input placeholder="Фамилия" icon={icon_user} background={background}/>
-                           <Input placeholder="Email" icon={icon_email} background={background}/>
-                           <Input placeholder="Пароль" icon={icon_password} background={background} visibility={show_password}/>
-                           <Input placeholder="Повторите пароль" icon={icon_password} background={background} visibility={show_password}/>
+                           <Input placeholder="Имя" type="text" icon={icon_user} background={background} visibility={show_password}/>
+                           <Input placeholder="Фамилия" type="text" icon={icon_user} background={background} visibility={show_password}/>
+                           <Input placeholder="Email"  type="email" icon={icon_email} background={background} visibility={show_password}/>
+                           <Input placeholder="Пароль" icon={icon_password} background={background}
+                                  type={typeButton} onClick={handleShowPassword}/>
+                           <Input placeholder="Повторите пароль"  icon={icon_password} background={background}
+                                  type={typeButton} onClick={handleShowPassword}/>
                     </div>
                     <button className={styles.footer} name="register_button">Зарегистрироваться</button>
                 </div>

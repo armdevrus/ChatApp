@@ -22,7 +22,11 @@
 .visibility {
     position: absolute;
     left: 609px;
-
+    background: no-repeat center/25px url("../../icons/show_password_.png");
+    height: 20px;
+    width: 25px;
+    border: none;
+    padding: 7px;
 }
 
 .input {
