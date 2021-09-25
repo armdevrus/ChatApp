@@ -51,8 +51,8 @@
     border-radius: 10px;
 }
 .footer_links{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
 }
 .footer_link_first{
     margin-left: 50px;
@@ -63,9 +63,7 @@
 
 }
 .footer_link_second{
-    display: flex;
-    justify-content: end;
-    margin-right: 50px;
+    transform: translate(220%,0);
     cursor: pointer;
     font-family: "Montserrat";
     font-weight: 500;

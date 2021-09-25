@@ -9,6 +9,7 @@ import icon_password from './../../icons/icon_password.png'
 
 import styles from './Authorization.module.css'
 import Input from "../../components/Input/Input";
+import Registration from "../Registration/Registration";
 
 const Authorization = () => {
     const [typeInput, setTypeInput] = React.useState('password')
@@ -19,6 +20,9 @@ const Authorization = () => {
         } else {
             setTypeInput('password')
         }
+    }
+    const handleFollowRegistration = () => {
+        window.location.href='http://localhost:3000/registration'
     }
     return(
         <div className={styles.main}>
@@ -41,7 +45,7 @@ const Authorization = () => {
                     <button className={styles.footer_button}>Войти</button>
                     <div className={styles.footer_links}>
                         <a className={styles.footer_link_first}>Забыли пароль?</a>
-                        <a className={styles.footer_link_second}>Регистрация</a>
+                        <a className={styles.footer_link_second} onClick={handleFollowRegistration}>Регистрация</a>
                     </div>
                 </div>
             </div>

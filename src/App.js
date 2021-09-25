@@ -8,12 +8,12 @@ function App() {
         <>
            <Link to="/registration">Registration</Link>
             <br/>
-           <Link to="/authorization">Authorization</Link>
+           <Link to="">Authorization</Link>
             <Switch>
                 <Route path="/registration">
                     <Registration/>
                 </Route>
-                <Route path="/authorization">
+                <Route exact path="">
                     <Authorization/>
                 </Route>
             </Switch>
