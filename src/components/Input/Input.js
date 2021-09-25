@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Input.module.css"
 
 const Input = ({placeholder, icon, background, visibility, type, onClick}) => {
-
     return (
         <div className={styles.container}>
             <div className={styles.img}>

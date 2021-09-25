@@ -38,8 +38,6 @@
     grid-template-rows: repeat(5, 85px);
     grid-gap: 30px;
     margin: 0 50px 0 50px;
-    background-color: white;
-    position: relative;
 }
 
 /*.background_image_second {*/
