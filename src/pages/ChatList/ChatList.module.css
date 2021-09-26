@@ -1,0 +1,207 @@
+.container__chat_list{
+    height: 1215px;
+    width: 1920px;
+}
+.container__header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    background: linear-gradient(90.01deg, #2A8BF2 0.01%, #0A6CD6 99.99%);
+}
+.container__header_left{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+}
+.container__header_left_username{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.header_left_icon{
+    margin: 20px 0 20px 180px;
+}
+.header_left_text{
+    margin: 36px 56px 35px 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
+.container__header_left_setting{
+    position: relative;
+}
+.header_left_setting_img{
+    margin: 38px 10px 38px 0;
+}
+.header_left_setting_button{
+    position: absolute;
+    top: 39px;
+    bottom: 39px;
+    border: none;
+    background: none;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container__header_right{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.header_right_exit_button{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 180px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 19px 113px 19px 69px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+}
+.header_right_exit_icon{
+    position: absolute;
+    top: 17px;
+    left: 150px;
+}
+.container__body{
+    height: 1015px;
+}
+.container__body_content{
+    display: grid;
+    grid-template-rows: 125px 389px 389px;
+    grid-gap: 30px;
+    position: relative;
+}
+.container__body_content_search_chat{
+    height: 125px;
+    width: 1560px;
+    background: #D4D6F0;
+    top: 50px;
+    right: 180px;
+    left: 180px;
+    position: relative;
+    border-radius: 15px;
+}
+.container__body_content_search_chat_input{
+    height: 85px;
+    width: 1520px;
+    border: 1px solid #BABABA;
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-indent: 30px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+}
+.container__body_content_search_chat_input:focus{
+    text-indent: 30px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+    outline: none;
+}
+.container__body_content_search_chat_input::placeholder{
+    text-indent: 30px;
+    opacity: 50%;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.container__body_content_search_chat_button{
+    position: absolute;
+    left: 1277px;
+    top: 33px;
+    bottom: 32px;
+    right: 40px;
+    border: none;
+    width: 243px;
+    height: 60px;
+    background: linear-gradient(206.57deg, #6476F4 0%, #3246D3 83.33%);
+    border-radius: 10px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__body_content_search_chat_button_icon{
+    padding-right: 15px;
+}
+.container__body_content_chats{
+    /*display: grid;*/
+    /*grid-template-columns: 132px 1428px;*/
+    width: 1560px;
+    height: 374px;
+    margin: 50px 180px 0 180px;
+    background: white;
+    position: relative;
+    border-radius: 15px;
+}
+.container__body_content_chats_avatar_time{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.body_content_chats_time{
+    position: relative;
+    top: 10px;
+    left: 11px;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 50%;
+}
+.container__body_content_chat_name_paragraph{
+    position: absolute;
+    top: 40px;
+    left: 132px;
+    right: 140px;
+}
+.body_content_chat_name{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+}
+.body_content_chat_paragraph{
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 20px;
+
+    background: #F8F9FB;
+    border-radius: 10px;
+}
+.container__footer{
+    height: 100px;
+    position: relative;
+}
+.footer_button{
+    position: absolute;
+    top: 13px;
+    left: 1497px;
+    border: none;
+    width: 243px;
+    height: 60px;
+    background: linear-gradient(206.57deg, #6476F4 0%, #3246D3 83.33%);
+    border-radius: 10px;
+    color: white;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+}
