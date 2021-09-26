@@ -34,6 +34,13 @@
     width: 100%;
     border-radius: 0 15px 15px 0;
     text-indent: 30px;
+
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+}
+.input:focus {
+    outline: none;
 }
 
 .input::placeholder {
