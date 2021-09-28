@@ -10,7 +10,7 @@
 }
 .container__header_left{
     display: grid;
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .container__header_left_username{
     display: grid;
@@ -67,9 +67,8 @@
     font-size: 18px;
 }
 .header_right_exit_icon{
-    position: absolute;
-    top: 17px;
-    left: 150px;
+    position: relative;
+    right: 248px;
 }
 .container__body{
     height: 1015px;
@@ -153,13 +152,15 @@
 .container__body_content_chats_avatar_time{
     position: relative;
     top: 50px;
+}
+.body_content_chats_avatar{
+    position: relative;
     left: 50px;
 }
-
 .body_content_chats_time{
     position: relative;
     top: 10px;
-    left: 11px;
+    left: 56px;
 
     font-family: Montserrat;
     font-weight: 500;

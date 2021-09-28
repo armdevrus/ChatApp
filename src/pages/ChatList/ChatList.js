@@ -1,15 +1,15 @@
 import React from "react";
 
 import styles from './ChatList.module.css'
-import icons_chatlist_header_left_avatar from '../../icons/icons_chatlist_header_left_avatar.png'
+import icons_chatlist_header_left_avatar from '../../icons/icon_chatlist_header_left_avatar.png'
 import icon_chatlist_header_left_button from '../../icons/icon_chatlist_header_left_button.png'
-import icons_chatlist_header_right_button from './../../icons/icons_chatlist_header_right_button.png'
+import icons_chatlist_header_right_button from '../../icons/icon_chatlist_header_right_button.png'
 import icon_chatlist_body_chat_avatar from './../../icons/icon_chatlist_body_chat_avatar.png'
 import icon_chatlist_body_button_search from './../../icons/icon_chatlist_body_button_search.png'
 import moment from "moment";
 const ChatList = () => {
 
-    const time = moment().format('h:mm')
+    const time = moment().format('hh:mm')
     return(
         <>
             <div className={styles.container__main}>
@@ -26,10 +26,8 @@ const ChatList = () => {
                             </div>
                         </div>
                         <div className={styles.container__header_right}>
-                            <button className={styles.header_right_exit_button}>
-                                Выйти
-                                <img className={styles.header_right_exit_icon} src={icons_chatlist_header_right_button} alt="Exit"/>
-                            </button>
+                            <button className={styles.header_right_exit_button}>Выйти</button>
+                            <img className={styles.header_right_exit_icon} src={icons_chatlist_header_right_button} alt="Exit"/>
                         </div>
                     </div>
                     <div className={styles.container__body}>
