@@ -4,10 +4,8 @@
 }
 
 .formRegistration {
+    transform: translateY(20px);
     display: grid;
-    grid-template-areas:
-            "header"
-            "body";
     grid-gap: 40px;
     background-color: white;
     box-shadow: 0px 4px 96px 0px #0A094B36;

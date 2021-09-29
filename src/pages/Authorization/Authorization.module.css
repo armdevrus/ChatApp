@@ -3,6 +3,7 @@
     justify-content: center;
 }
 .formAuthorization{
+    transform: translateY(60px);
     height: 793px;
     width: 770px;
     background: white;
