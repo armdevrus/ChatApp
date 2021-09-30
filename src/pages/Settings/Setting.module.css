@@ -75,6 +75,8 @@
 }
 .container__body_left{
     background: linear-gradient(90.01deg, #2A8BF2 0.01%, #0A6CD6 99.99%);
+    border-top: 1px solid lightgray;
+
 }
 .container__body_left_avatar_button{
     margin: 100px 132px 0 312px;
