@@ -1,0 +1,157 @@
+.container__settings{
+    height: 1215px;
+    width: 1920px;
+}
+.container__header{
+    height: 100px;
+    background: linear-gradient(90.01deg, #2A8BF2 0.01%, #0A6CD6 99.99%) ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container__header_left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container__header_left_username{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header_left_icon{
+    margin: 20px 0 20px 180px;
+}
+.header_left_text{
+    margin: 36px 56px 35px 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+.container__header_left_setting{
+    position: relative;
+}
+.header_left_setting_img{
+    margin: 38px 10px 38px 0;
+}
+.header_left_setting_button{
+    position: absolute;
+    top: 39px;
+    bottom: 39px;
+    border: none;
+    background: none;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+}
+.container__header_right{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.header_right_exit_button{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 180px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 19px 113px 19px 69px;
+    color: white;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+}
+.header_right_exit_icon{
+    position: relative;
+    right: 248px;
+}
+.container__body{
+    height: 1114px;
+    display: grid;
+    grid-template-columns: 687px 1233px;
+}
+.container__body_left{
+    background: linear-gradient(90.01deg, #2A8BF2 0.01%, #0A6CD6 99.99%);
+}
+.container__body_left_avatar_button{
+    margin: 100px 132px 0 312px;
+    display: grid;
+}
+.body_left_avatar{
+
+}
+.body_left_button{
+    margin-top: 10px;
+    background: none;
+    border: none;
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+.container__body_right_inputs_buttons_divButtons{
+    margin: 101px 312px 0 20px;
+}
+.container__body_right_inputs_buttons{
+    display: grid;
+    grid-template-rows: repeat(3, 85px);
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.container__body_right_input_button{
+    position: relative;
+}
+.body_right_input{
+    background: white;
+    border: 1px solid #BABABA;
+    border-radius: 10px;
+    height: 85px;
+    width: 901px;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 140%;
+    text-indent: 30px ;
+}
+.body_right_input:focus{
+    outline: none;
+}
+.body_right_button{
+    background: no-repeat url("./../../icons/icon_setting_body_right_changeInput.png");
+    border: none;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 28px;
+    left: 841px;
+}
+.container__body_right_divButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.body_right_button_first{
+    background: linear-gradient(206.57deg, #6476F4 0%, #3246D3 83.33%);
+    border-radius: 10px;
+    border: none;
+    width: 375px;
+    height: 85px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+.body_right_button_second{
+    background: linear-gradient(206.57deg, #6476F4 0%, #3246D3 83.33%);
+    border-radius: 10px;
+    border: none;
+    width: 175px;
+    height: 85px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
