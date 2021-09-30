@@ -9,16 +9,6 @@ import icon_password from './../../icons/icon_password.png'
 
 const ResurrectionPassword = () => {
 
-    const [typeInput, setTypeInput] = React.useState('password')
-
-    const handleShowPassword = () => {
-        if (typeInput === 'password') {
-            setTypeInput('text')
-        } else {
-            setTypeInput('password')
-        }
-    }
-
     return (
         <>
             <div className={styles.main}>
@@ -29,10 +19,8 @@ const ResurrectionPassword = () => {
                     <div className={styles.container__body}>
                         <Input placeholder="Email" icon={icon_email} background={background} type="email"
                                visibility={show_password}/>
-                        <Input placeholder="Пароль" icon={icon_password} background={background} type={typeInput}
-                               onClick={handleShowPassword}/>
-                        <Input placeholder="Пароль" icon={icon_password} background={background} type={typeInput}
-                               onClick={handleShowPassword}/>
+                        <Input placeholder="Пароль" icon={icon_password} background={background}/>
+                        <Input placeholder="Пароль" icon={icon_password} background={background}/>
                     </div>
                     <button className={styles.footer}>Восстановить пароль</button>
                 </div>

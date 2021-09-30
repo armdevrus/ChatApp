@@ -12,15 +12,7 @@ import Input from "../../components/Input/Input";
 import Registration from "../Registration/Registration";
 
 const Authorization = () => {
-    const [typeInput, setTypeInput] = React.useState('password')
 
-    const handleShowPassword = () => {
-        if (typeInput === 'password') {
-            setTypeInput('text')
-        } else {
-            setTypeInput('password')
-        }
-    }
     const handleFollowRegistration = () => {
         window.location.href='http://localhost:3000/registration'
     }
@@ -40,7 +32,7 @@ const Authorization = () => {
                 <div className={styles.body_footer}>
                     <div className={styles.body_input}>
                         <Input placeholder="Email" icon={icon_email} background={background} visibility={show_password} type="email"/>
-                        <Input placeholder="Пароль" icon={icon_password} background={background} type={typeInput} onClick={handleShowPassword}/>
+                        <Input placeholder="Пароль" icon={icon_password} background={background}/>
                     </div>
                     <button className={styles.footer_button}>Войти</button>
                     <div className={styles.footer_links}>

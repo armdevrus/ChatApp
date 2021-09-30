@@ -9,16 +9,6 @@ import Input from "../../components/Input/Input";
 
 const RegistrationForm = () => {
 
-    const [typeInput, setTypeInput] = React.useState('password')
-
-    const handleShowPassword = () => {
-        if (typeInput === 'password') {
-            setTypeInput('text')
-        } else {
-            setTypeInput('password')
-        }
-    }
-
     return(
         <div className={styles.main}>
             <div className={styles.formRegistration}>
@@ -30,10 +20,8 @@ const RegistrationForm = () => {
                            <Input placeholder="Имя" type="text" icon={icon_user} background={background} visibility={show_password}/>
                            <Input placeholder="Фамилия" type="text" icon={icon_user} background={background} visibility={show_password}/>
                            <Input placeholder="Email"  type="email" icon={icon_email} background={background} visibility={show_password}/>
-                           <Input placeholder="Пароль" icon={icon_password} background={background}
-                                  type={typeInput} onClick={handleShowPassword}/>
-                           <Input placeholder="Повторите пароль"  icon={icon_password} background={background}
-                                  type={typeInput} onClick={handleShowPassword}/>
+                           <Input placeholder="Пароль" icon={icon_password} background={background}/>
+                           <Input placeholder="Повторите пароль"  icon={icon_password} background={background}/>
                     </div>
                     <button className={styles.footer} name="register_button">Зарегистрироваться</button>
                 </div>
