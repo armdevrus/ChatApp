@@ -9,7 +9,7 @@ import icon_password from './../../icons/icon_password.png'
 
 import styles from './Authorization.module.css'
 import Input from "../../components/Input/Input";
-import Registration from "../Registration/Registration";
+// import Registration from "../Registration/Registration";
 
 const Authorization = () => {
 

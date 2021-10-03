@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Input.module.css"
 
-const Input = ({placeholder, icon, background, visibility}) => {
+const Input = ({placeholder, icon, background, visibility, value, onChange}) => {
 
-    const [typeInput, setTypeInput] = React.useState('password')
+    const [typeInput, setTypeInput] = React.useState('text')
 
     const handleShowPassword = () => {
         if (typeInput === 'password') {
@@ -19,7 +19,13 @@ const Input = ({placeholder, icon, background, visibility}) => {
                 <img src={background} className={styles.background}/>
                 <button className={styles.visibility} hidden={visibility} onClick={handleShowPassword} />
             </div>
-            <input className={styles.input} type={typeInput} placeholder={placeholder}/>
+            <input
+                className={styles.input}
+                type={typeInput}
+                placeholder={placeholder}
+                defaultValue={value}
+                onChange={onChange}
+            />
         </div>
     )
 }
