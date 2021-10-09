@@ -7,11 +7,13 @@ import background from "../../icons/background/background_icon.png"
 import icon_user from "../../icons/icon_user.png"
 import icon_email from "../../icons/icon_email.png"
 import icon_password from "../../icons/icon_password.png"
-import show_password from "../../icons/show_password_.png"
+// import show_password from "../../icons/show_password_.png"
 import Input from "../../components/Input/Input";
+import {useHistory} from "react-router-dom";
 
 const RegistrationForm = () => {
 
+    const history = useHistory()
     const dispatch = useDispatch()
 
     const [userName, setUserName] = useState('')
@@ -26,6 +28,10 @@ const RegistrationForm = () => {
     const handleOnChangeUserPassword = (event) => setUserPassword(event.target.value)
     const handleOnChangeUserRepeatPassword = (event) => setUserRepeatPassword(event.target.value)
 
+    const handleOnClickRegistration = () => {
+        dispatch(addUser({userName, userSurname, userEmail, userPassword}))
+        history.push('/chat_list')
+    }
     // console.log(userRepeatPassword)
     return (
         <div className={styles.main}>
@@ -41,7 +47,6 @@ const RegistrationForm = () => {
                             placeholder="Имя"
                             icon={icon_user}
                             background={background}
-                            visibility={show_password}
                         />
                         <Input
                             value={userSurname}
@@ -49,7 +54,6 @@ const RegistrationForm = () => {
                             placeholder="Фамилия"
                             icon={icon_user}
                             background={background}
-                            visibility={show_password}
                         />
                         <Input
                             value={userEmail}
@@ -57,7 +61,6 @@ const RegistrationForm = () => {
                             placeholder="Email"
                             icon={icon_email}
                             background={background}
-                            visibility={show_password}
                         />
                         <Input
                             value={userPassword}
@@ -65,6 +68,7 @@ const RegistrationForm = () => {
                             icon={icon_password}
                             background={background}
                             onChange={handleOnChangeUserPassword}
+                            visibility={true}
                         />
                         <Input
                             value={userRepeatPassword}
@@ -72,12 +76,13 @@ const RegistrationForm = () => {
                             placeholder="Повторите пароль"
                             icon={icon_password}
                             background={background}
+                            visibility={true}
                         />
                     </div>
                     <button
                         className={styles.footer}
                         name="register_button"
-                        onClick={() => dispatch(addUser({userName, userSurname, userEmail, userPassword, userRepeatPassword}))}
+                        onClick={handleOnClickRegistration}
                     >Зарегистрироваться
                     </button>
                 </div>
